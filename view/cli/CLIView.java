@@ -28,6 +28,7 @@ public class CLIView {
         return instance;
     }
 
+    // todo create custom exception ApplicationViewStartupFailedException
     private CLIView(Integer MaxIDDAO) throws SQLException {
         this.scanner = new Scanner(System.in);
         this.controller = Controller.getInstance();
@@ -91,6 +92,7 @@ public class CLIView {
         scanner.nextLine();
     }
 
+    // todo work with exceptions
     private void createCar() throws ParseException, SQLException {
         System.out.println("\nNew car:");
         System.out.print("Enter name: ");
@@ -128,6 +130,7 @@ public class CLIView {
         System.out.println("\nInfo: Car has been added!");
     }
 
+    // todo similar with exceptions
     public void deleteCar() throws NotFoundException, SQLException {
         System.out.println("Which car to sell?");
         System.out.print("Enter id: ");
@@ -138,6 +141,7 @@ public class CLIView {
         System.out.println("the car has been deleted:  " + IdForPrint);
     }
 
+    // todo similar with exceptions
     public void modifyCar() throws SQLException {
         System.out.print("Choose a car. Enter id: ");
         String ID = scanner.nextLine();

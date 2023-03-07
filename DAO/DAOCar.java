@@ -1,4 +1,4 @@
-package DAO;
+package DAO;// fixme rename package from DAO to dao - cuz it should be in lower case
 
 import model.Car;
 
@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
+// todo format all code via ctrl + L
 public  class DAOCar implements DAOInterface {
     private static DAOCar instance;
     private  Connection connection;
